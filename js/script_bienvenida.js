@@ -1,17 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let nombreCompleto = localStorage.getItem("nombreUsuario");
+    let nombreCompleto = null;
 
-    if (!nombreCompleto) {
-        alert("¡Bienvenido!");
-        while (!nombreCompleto) {
-            nombreCompleto = prompt("Ingrese su nombre y apellido:");
-            if (nombreCompleto === null || nombreCompleto.trim() === "") {
-                alert("Por favor ingrese un nombre válido.");
-                nombreCompleto = null;
-            }
+    alert("¡Bienvenido!");
+
+    while (!nombreCompleto) {
+        const nombre = prompt("Ingrese su nombre:");
+        const apellido = prompt("Ingrese su apellido:");
+
+        if (!nombre || nombre.trim() === "" || !apellido || apellido.trim() === "") {
+            alert("Por favor ingrese un nombre y apellido válidos.");
+        } else {
+            nombreCompleto = `${nombre.trim()} ${apellido.trim()}`;
         }
-        localStorage.setItem("nombreUsuario", nombreCompleto);
     }
+
+    // Guardamos en localStorage si luego quieres usarlo
+    localStorage.setItem("nombreUsuario", nombreCompleto);
 
     const saludo = document.getElementById("saludoUsuario");
     saludo.textContent = `Hola, ${nombreCompleto}. Bienvenido nuevamente.`;
