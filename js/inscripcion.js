@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Enviar directamente con EmailJS
         emailjs.send("service_3pd5l1t", "template_d0uo8hj", templateParams)
             .then(() => {
-                alert("Formulario enviado correctamente. Revisa tu correo.");
+                alert("Formulario enviado correctamente.");
                 form.reset();
             })
             .catch((error) => {
@@ -31,3 +31,4 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     });
 });
+
