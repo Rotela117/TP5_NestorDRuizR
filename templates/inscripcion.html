@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="../statics/styles.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("AElZjJ9bxHXGrEZ74");
+        })();
+    </script>
+
+    <script src="../js/inscripcion.js" defer></script>
+</head>
+
+<body class="fondo-inscripcion">
+
+    <!-- Imagen -->
+    <section class="imagen-principal">
+        <img src="../statics/images/fondo.png" alt="Imagen principal">
+    </section>
+
+    <div class="form-card">
+        <h2>Formulario de Inscripción</h2>
+
+        <form id="formInscripcion">
+
+            <label>Nombre</label>
+            <input type="text" id="firstName" required>
+
+            <label>Apellido</label>
+            <input type="text" id="lastName" required>
+
+            <label>Email</label>
+            <input type="email" id="correo" required>
+
+            <label>Curso</label>
+            <div class="cursos">
+                <label><input type="radio" name="curso" value="Python" required> Python</label>
+                <label><input type="radio" name="curso" value="Java"> Java</label>
+                <label><input type="radio" name="curso" value="SQL"> SQL</label>
+                <label><input type="radio" name="curso" value="CSS"> CSS</label>
+            </div>
+
+            <button type="submit" id="btnEnviarDatos" class="btn-form">Enviar datos</button>
+
+        </form>
+    </div>
+
+    <div class="btn-container">
+        <a href="examen.html" class="btn-form btn-form2">Ir a formulario</a>
+        <a href="../index.html" class="btn-form btn-principal">Ir a página principal</a>
+    </div>
+
+</body>
+</html>

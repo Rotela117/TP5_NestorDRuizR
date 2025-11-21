@@ -1,0 +1,230 @@
+/* Reset suave */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #eef4ff;
+    color: #1a2a44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.3rem;
+    color: #123a6f;
+}
+
+.descripcion {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #345;
+}
+
+/* Texto usuario */
+.usuario {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0c2b4a;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.btn {
+    background: linear-gradient(135deg, #5a8dee, #4d7bd6);
+    padding: 12px 22px;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: transform 0.18s ease, background 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    background: linear-gradient(135deg, #6ba4ff, #5d8ef0);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Botón especial Inicio */
+.btn-inicio {
+    background: #2c4f80;
+}
+
+.btn-inicio:hover {
+    background: #3d5f94;
+}
+
+
+.fondo-inscripcion {
+    background: url("../statics/images/fondo.jpg") no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Tarjeta */
+.form-card {
+    background: rgba(255,255,255,0.92);
+    border: 2px solid #1a2a44;
+    border-radius: 14px;
+    padding: 30px 35px;
+    width: 320px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+}
+
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a2a44;
+}
+
+/* Inputs */
+.form-card input[type="text"],
+.form-card input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #1a2a44;
+    border-radius: 6px;
+}
+
+/* Radios */
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+    gap: 5px 0;
+}
+
+/* Botón */
+.btn-form {
+    width: 100%;
+    background: #1d4ed8;
+    padding: 10px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.btn-form:hover {
+    transform: scale(1.05);
+    background: #2563eb;
+}
+
+.login-link {
+    display: block;
+    margin-top: 12px;
+    text-align: center;
+    color: #0c1f3b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor de botones externos */
+.btn-container {
+    width: 320px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Botones lado a lado */
+.fila-botones {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Botones */
+.btn-form {
+    background: #1d4ed8;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    transition: transform .2s, background .25s;
+    font-size: .95rem;
+    min-width: 140px;
+}
+
+.btn-form:hover {
+    transform: scale(1.06);
+    background: #2563eb;
+}
+
+.btn-form2 {
+    background: #0c568a;
+}
+
+.btn-form2:hover {
+    background: #0e6ba8;
+}
+
+.btn-principal {
+    background: #1f2937;
+    width: 100%;
+    margin-top: 12px;
+}
+
+.btn-principal:hover {
+    background: #374151;
+}
+
+
+.form-card input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #1a2a44;
+    border-radius: 6px;
+}
+
+
+.imagen-principal {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagen-principal img {
+    width: 270px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    display: block;
+    margin: 0 auto;
+}
