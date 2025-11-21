@@ -228,3 +228,14 @@ h1 {
     display: block;
     margin: 0 auto;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+footer {
+    margin-top: auto; /* empuja el footer al final */
+}
